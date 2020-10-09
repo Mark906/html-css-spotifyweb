@@ -116,13 +116,25 @@ main {
     border-radius: 6px;
     background-color: #181818;
     margin: 20px;
+    position: relative;
 }
 
 .card:hover {
     box-shadow: 0 10px 50px -5px rgba(51,71,91,0.12);
-    transform: scale(1.1);
+    transform: scale(1.06);
     transition: 0.3s;
     background-color: #282828;
+
+}
+
+.card:hover::after {
+    position: absolute;
+    content: '\f04b';
+    font-family: 'Font Awesome 5 Free';
+    color: white;
+    font-weight: bold;
+    top: 69px;
+    left: 73px;
 }
 
 .card .img {
