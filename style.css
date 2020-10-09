@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 #wrapper {
     display: flex;
     flex-direction: column;
@@ -16,7 +20,7 @@
 }
 
 aside {
-    background-color: black;
+    background-color: #040404;
     width: 120px;
     display: flex;
     flex-shrink: 0;
@@ -24,9 +28,57 @@ aside {
     justify-content: space-between;
 }
 
-.aside-top {
-    height: 60%;
-    background-color: darkblue;
+.politica {
+
+    font-size: 12px;
+    margin-left: 8%;
+    margin-bottom: 12%;
+}
+
+.politica p>a {
+    text-decoration: none;
+    color: white;
+}
+
+.politica p>a:hover {
+    text-decoration: underline;
+}
+
+.politica p:first-child {
+    margin-bottom: 5%;
+}
+
+.menu ul li {
+    display: block;
+    font-size: 15px;
+    margin: 10% 8%;
+    border-radius: 4px;
+
+}
+
+.menu ul li:hover {
+    background-color: #282828;
+    transition: 0.5s;
+}
+
+.fa, .fas {
+    margin-right: 5%;
+}
+
+.menu ul li>a {
+    display: block;
+    text-decoration: none;
+    padding: 4%;
+    color: #B3B3B3;
+}
+
+.menu ul li>a>i {
+    display: none;
+}
+
+.menu ul li>a:hover {
+    color: white;
+    transition: 0.5s;
 }
 
 .logo {
@@ -37,13 +89,9 @@ aside {
     width: 100%;
 }
 
-.aside-bot {
-    height: 30%;
-    background-color: grey;
-}
 
 main {
-    background-color: blue;
+    background-color: #121212;
     flex-grow: 1;
     overflow: auto;
     height: calc(100vh - 90px);
@@ -54,6 +102,7 @@ main {
     color: white;
     text-transform: uppercase;
     font-size: 9px;
+    margin-top: 10%;
 }
 
 .card-container {
@@ -65,8 +114,15 @@ main {
     width: 160px;
     height: 200px;
     border-radius: 6px;
-    background-color: #282828;
+    background-color: #181818;
     margin: 20px;
+}
+
+.card:hover {
+    box-shadow: 0 10px 50px -5px rgba(51,71,91,0.12);
+    transform: scale(1.1);
+    transition: 0.3s;
+    background-color: #282828;
 }
 
 .card .img {
@@ -107,7 +163,11 @@ footer {
 @media screen and (min-width: 992px) {
 
     aside {
-        width: 170px;
+        width: 210px;
+    }
+
+    .menu ul li>a>i {
+        display: inline-block;
     }
 
     .title {
