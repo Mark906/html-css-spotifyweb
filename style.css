@@ -124,7 +124,7 @@ main {
     margin-top: 7%;
     text-transform: uppercase;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 2px;
 }
 
@@ -192,7 +192,7 @@ footer {
 
 .artist {
     flex-direction: column;
-    margin-top: 11%;
+    margin-top: 7%;
     display: none;
 }
 
@@ -211,11 +211,10 @@ footer {
 }
 
 .footer-left-icon {
-    margin-left: 3%;
+    margin-left: 5%;
     color: white;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 .footer-center {
@@ -281,7 +280,19 @@ footer {
 .timer .slider {
     margin-left: 20px;
     margin-right: 20px;
-    max-width: 400px;
+    max-width: 60%;
+}
+
+.slider {
+    flex-grow: 1;
+    -webkit-appearance: none;
+    opacity: 0.2;
+    height: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: 0;
+    max-width: 250px;
+    margin: 0 3%;
 }
 
 .slider:hover {
@@ -310,7 +321,6 @@ footer {
 
 .footer-right {
     width: 30%;
-    background-color: lightblue;
     display: none;
 }
 
@@ -334,8 +344,18 @@ footer {
         text-align: left;
     }
 
+    .timer .slider {
+        max-width: 400px;
+    }
     .footer-right {
-        display: block;
+        display: flex;
+        color: white;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-right .slider {
+        max-width: 150px;
     }
 
     .footer-center {
