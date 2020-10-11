@@ -94,7 +94,7 @@ main {
     background-color: #121212;
     flex-grow: 1;
     overflow: auto;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 79px);
 }
 
 .title {
@@ -111,12 +111,29 @@ main {
 }
 
 .card {
-    width: 160px;
-    height: 200px;
+    width: 162px;
+    height: 225px;
     border-radius: 6px;
     background-color: #181818;
     margin: 20px;
     position: relative;
+}
+
+.card h3 {
+    text-align: center;
+    margin-top: 7%;
+    text-transform: uppercase;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.card p {
+    text-align: center;
+    margin-top: 5%;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
 .card:hover {
@@ -146,25 +163,150 @@ main {
     margin-top: 13%;
 }
 
+.img img {
+    width: 100%;
+}
+
 footer {
-    background-color: grey;
-    height: 90px;
+    background-color: #282828;
+    height: 79px;
     display: flex;
     justify-content: space-between;
     flex-shrink: 0;
 }
 
 .footer-left {
-    width: 30%;
-    background-color: lightblue;
+    display: flex;
+}
+
+.img-playbar {
+    height: 69px;
+    width: 74px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.img-playbar img {
+    width: 80%;
+}
+
+.artist {
+    flex-direction: column;
+    margin-top: 11%;
+    display: none;
+}
+
+.artist h3 {
+    color: white;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.artist p {
+    color: #B3B3B3;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer-left-icon {
+    margin-left: 3%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .footer-center {
     width: 30%;
-    background-color: lightcoral;
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
-    justify-content: center;
+    justify-content: space-around;
+    color: white;
 }
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+}
+
+.icons a {
+    margin-left: 10%;
+}
+
+.icons a:first-child {
+    margin-left: 0;
+}
+
+.icons a>i {
+    font-size: 16px;
+    padding: 0 5px;
+    margin-left: 10px;
+    line-height: 25px;
+    color: white;
+}
+
+.icons a>i:first-child {
+    margin-left: 0;
+}
+
+.icons a>i:last-child {
+    margin-right: 0;
+}
+
+.icons .fa-pause {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+}
+
+.riproduzione {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.timer .slider {
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 400px;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: lightgreen;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: lightgreen;
+    cursor: pointer;
+}
+
+
 
 .footer-right {
     width: 30%;
@@ -198,6 +340,11 @@ footer {
 
     .footer-center {
         flex-grow: 0;
+
+    }
+
+    .artist {
+        display: flex;
     }
 
 }
