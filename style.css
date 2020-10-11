@@ -177,6 +177,7 @@ footer {
 
 .footer-left {
     display: flex;
+    width: 25%;
 }
 
 .img-playbar {
@@ -320,7 +321,7 @@ footer {
 
 
 .footer-right {
-    width: 30%;
+    width: 25%;
     display: none;
 }
 
